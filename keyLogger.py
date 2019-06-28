@@ -45,7 +45,7 @@ class Gdrive(Thread):
         gauth.LocalWebserverAuth()
 
         drive = GoogleDrive(gauth)
-        file1 = drive.CreateFile({'title': 'log.txt'})  # Create GoogleDriveFile instance with title 'Hello.txt'.
+        file1 = drive.CreateFile({'title': 'log.txt'})  # Create GoogleDriveFile instance with title 'log.txt'.
         while True:
             with open('log.txt') as f:
                 fp = f.read()
